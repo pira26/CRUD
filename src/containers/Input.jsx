@@ -17,7 +17,7 @@ class Input extends Component {
     }
 
     componentDidMount() {
-        axios.post('http://localhost:3000/api/users', {
+        axios.post('https://frozen-ocean-48447.herokuapp.com/users', {
             mail: this.state.mail,
             username: this.state.username,
             password: this.state.password,
