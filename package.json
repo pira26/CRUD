@@ -1,17 +1,8 @@
 {
-  "name": "mern-stack",
+  "name": "crud",
   "version": "1.0.0",
   "description": "Mern stack starter (MongoDB, Express, React, Node)",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "compile": "webpack",
-    "start-server": "npm run compile && nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pira26/MERN.git"
-  },
+  "main": "server.js",
   "keywords": [
     "JavaScript",
     "React",
@@ -23,10 +14,23 @@
   ],
   "author": "Pira",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pira26/MERN.git"
+  },
   "bugs": {
     "url": "https://github.com/pira26/MERN/issues"
   },
   "homepage": "https://github.com/pira26/MERN#readme",
+  "scripts": {
+    "start": "node server.js",
+    "compile": "webpack",
+    "start-server": "npm run compile && nodemon server.js",
+    "deploy": "now"
+  },
+  "engines": {
+    "node": "8.2.1"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

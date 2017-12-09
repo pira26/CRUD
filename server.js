@@ -54,6 +54,8 @@ app.use(webpackHotMiddleware(compiler, {
     log: console.log
 }));
 
+app.use(express.static(path.resolve(__dirname, "www")));  
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname,'/www') + '/index.html');
 });
